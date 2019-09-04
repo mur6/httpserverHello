@@ -7,6 +7,6 @@ def app(environ, start_response):
         "hello world! カタツムリ".encode("utf-8"),
         ]
 
-with make_server('', 8000, app) as httpd:
-    print("Serving on port 8000...")
+with make_server('', 80, app) as httpd:
+    print("Serving on port 80...")
     httpd.serve_forever()
